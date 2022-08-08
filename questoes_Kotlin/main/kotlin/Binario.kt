@@ -36,9 +36,4 @@ object HandshakeCalculator{
         return res
     }
 }
-            //for ((i, v) in bin.reversed().withIndex()) {
-              //  if (v == '1'){
-                //    res.add(getEnumValue)
-                //}
-
-
+         
