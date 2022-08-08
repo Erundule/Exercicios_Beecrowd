@@ -1,0 +1,17 @@
+# Sequências Crescentes - 1146
+
+X= 1
+a= []
+while X != 0:
+    X= int(input())
+    for i in range(1, X+1):
+        i= str(i)
+        a.append(i)
+        i+= i
+        a= ' '.join(map(str,a))
+        b= a.rstrip()
+        if X!=0:
+            print(b, end=' ')
+            a= []
+        else:
+            break

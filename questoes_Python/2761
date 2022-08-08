@@ -1,0 +1,8 @@
+x= input().split()
+num_int= int(x[0])
+num_real= float(x[1])
+caracter= x[2]
+frase= ' '.join(x[3:])
+print(f'{num_int}{num_real}{caracter}{frase}')
+print(f'{num_int}\t{num_real:.6f}\t{caracter}\t{frase}')
+print('%10d%10.6f%10c%10s' % (num_int, num_real, caracter, frase))

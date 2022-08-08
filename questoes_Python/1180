@@ -1,0 +1,15 @@
+# Menor e Posição - 1180
+# Nesse problema, quer que seja inserido um número, a partir desse número irá resultar uma lista desse número,
+#  que será separado por espaços, a partir daí irá resultar o número de menor valor, 
+# a posição em que esse número ocupa.
+
+N=int(input())
+#numero de elementos que deverão ser lidos
+valores = list(map(int, input().split()))
+menor_valor = min(valores)
+menor_posicao = 0 
+for i in range(N):
+    if valores[i] == menor_valor:
+        menor_posicao = i 
+print(f'Menor valor: {menor_valor}')
+print(f'Posicao: {menor_posicao}')

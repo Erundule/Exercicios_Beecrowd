@@ -1,0 +1,20 @@
+#corrida de lesmas
+# dado um númro de lesmas e as velocidades de cada uma, a questão faz uma classificação de níveis de velocidade. 
+# A questão quer saber o nível da lesma com a maior velocídade do grupo de lesmas.
+while True:
+    try:
+        x = int(input())
+        L = input().split()
+        m= 0
+        for i in range(x):
+            if int(L[i]) > m:
+                m = int(L[i])
+        if m < 10:
+            N = 1
+        elif m >= 10 and m < 20:
+            N = 2
+        else:
+            N =3
+        print(N)
+    except EOFError:
+        break

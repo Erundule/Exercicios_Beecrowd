@@ -1,0 +1,13 @@
+# Entrada e Sáida de String - 2760
+#A questão pede três entradas de string, essas strings serão impressas 
+# juntas em ordens diferentes de acordo com as instruções oferecidas na questão.
+
+
+
+frase_1= input()
+frase_2= input()
+frase_3= input()
+print(frase_1 + frase_2 + frase_3)
+print(frase_2 + frase_3 + frase_1)
+print(frase_3 + frase_1 + frase_2)
+print(frase_1[0:10] + frase_2[0:10] + frase_3[0:10])

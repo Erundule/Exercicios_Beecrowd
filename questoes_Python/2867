@@ -1,0 +1,10 @@
+#Dígitos
+#A questão pede que digamos quantos dígitos existem no resultado de um número elevado à outro.
+
+casos = int(input())
+while casos:
+    casos -= 1
+    n, m = input().split(' ')
+    n, m = int(n),int(m)
+    conta = str(n ** m)
+    print(len(conta))

@@ -1,0 +1,28 @@
+# Sociedade do Anel - 2949
+# O problema pede que seja feita uma lista das raças que irão participar da comitiva de Bilbo, 
+# com base no número de seres que se alistaram.
+
+N= int(input('Quantos integrantes tem a comitiva de Bilbo? '))
+A= []
+E= []
+H= []
+M= []
+X= []
+for i in range(N):
+    I= input(' integrante e raça: ').split()
+    nome, raca= I
+    if raca == 'A':
+        A.append(I)
+    elif raca == 'E':
+        E.append(I)
+    elif raca == 'H':
+         H.append(I)
+    elif raca == 'M':
+        M.append(I)
+    elif raca == 'X':
+        X.append(I)
+print(f'{len(X)} Hobbit(s)')
+print(f'{len(H)} Humano(s)')
+print(f'{len(E)} Elfo(s)')
+print(f'{len(A)} Anao(s)')
+print(f'{len(M)} Mago(s)')

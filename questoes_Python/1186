@@ -1,0 +1,20 @@
+#Abaixo da Diagonal Secundária
+# Leia um caractere maiúsculo, que indica uma operação que deve ser realizada e uma matriz M[12][12]. 
+# Em seguida, calcule e mostre a soma ou a média considerando somente aqueles elementos que estão 
+# abaixo da diagonal Secundária da matriz, conforme ilustrado abaixo (área verde).
+conta = input()
+soma = 0
+lin = 12
+vazio = 0
+for c in range(12):
+    lin = lin - 1
+    for j in range(12):
+        valor = float(input())
+        if j > lin:
+            soma = soma + valor
+            vazio = vazio + 1
+if conta == 'S':
+    print(f'{soma:.1f}')
+else:
+    soma= soma/vazio
+    print(f'{soma:.1f}')

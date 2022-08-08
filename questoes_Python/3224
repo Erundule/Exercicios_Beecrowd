@@ -1,0 +1,11 @@
+#Aaah!
+#A questão pede para que verifiquemos se Jon pode ir ao médico ou não, caso esse possa, 
+#ele necessita ter capacidade de falar “aaah” por mais tempo que o médico pedir, 
+#representado pela quantidade de “a”s  como a quantidade necessária se ele pode ou não.
+
+jon = input()
+medico = input()
+if len(jon)>=len(medico):
+    print("go")
+else:
+    print("no")

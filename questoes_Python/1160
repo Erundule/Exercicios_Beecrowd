@@ -1,0 +1,23 @@
+#Crescimento Populacional
+#Dadas as informações de população e a taxa de crescimento de duas cidades quaisquer (A e B)
+# a questão quer saber quantos anos levará para que a cidade menor (sempre é a cidade A) 
+# ultrapasse a cidade B em população.
+
+T = int(input())
+for i in range(T):
+    pa,pb,ga,gb = map(float, input().split())
+    # pa e pb são as populações de cada cidade
+    # ga e gb são o crescimento populacional
+    pa = int(pa)
+    pb = int(pb)
+    ano = 0
+    while pb >= pa:
+        pa = int(pa*(1 + ga/100))
+        pb = int(pb*(1 + gb/100))        
+        ano = ano + 1
+        if ano >= 101:
+            print('Mais de 1 seculo.')
+            break
+    if ano <= 100:
+        ano = int(ano)
+        print(f'{ano} anos.')

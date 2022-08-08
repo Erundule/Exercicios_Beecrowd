@@ -1,0 +1,6 @@
+#Dividindo circulos
+#Em quantas partes os segmentos dados na entrada, dividem um circulo internamente 
+n = int(input())
+n =  1 + (((n-1)n)/2) + (((n) (n - 1) (n - 2 ) (n - 3))/24)
+print(f'{n:.0f}')
+

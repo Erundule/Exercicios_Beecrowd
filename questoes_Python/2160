@@ -1,0 +1,6 @@
+#Nome no Formulário
+#dada uma linha de texto, indicar se cabe em um formulário de 80 caracteres.
+if len(input()) > 80:
+    print('NO')
+else:
+    print('YES')

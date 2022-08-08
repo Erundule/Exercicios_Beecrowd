@@ -1,0 +1,7 @@
+#Entrada e Saída com Vírgula
+#Essa questão pede que seja inserida uma frase com vírgula na entrada, 
+#e que essa frase seja impressa duas vezes. A primeira impressão, 
+#é a da frase antes da vírgula e a segunda, é da frase depois da vírgula.
+frase= input().split(',')
+for i in frase:
+    print(i)

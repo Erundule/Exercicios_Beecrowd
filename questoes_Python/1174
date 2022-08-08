@@ -1,0 +1,11 @@
+#seleção em Vetor i
+
+# A Questão pede que seja inserido um vetor com 100 valores, 
+# e para cada valor menor que 10, que seja printado a posição no vetor e o valor do mesmo.
+
+Vetor = []
+for i in range(100):
+    number = float(input())
+    Vetor.append(number)
+    if number <= 10.0:
+        print(f'A[{i}] = {number}')

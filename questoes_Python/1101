@@ -1,0 +1,24 @@
+#Sequência de Números e Soma
+#Para cada par de números dados no input, criar uma sequencia do menor para o maior 
+# e a soma dos inteirod consecutivos a eles
+cond= True
+while cond==True:
+    v1, v2= map(int, input().split())
+    soma= 0
+    if v1 <= 0 or v2 <= 0:
+        cond=False
+    if v2 > v1:
+        maior= v2
+    else:
+        maior= v1
+    if v2 < v1:
+        menor= v2
+    else:
+        menor= v1
+    if cond==True:
+        for i in range(menor, maior+1):
+            print(i, end=' ')
+            soma+=i 
+            if i == maior:
+                print(f'Sum={soma}') 
+

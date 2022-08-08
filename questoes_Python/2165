@@ -1,0 +1,8 @@
+#tuitando
+# Essa questão pede para conferir se um texto cabe no tweet
+T = str(input())
+
+if len(T) <= 140:
+    print('TWEET')
+else:
+    print('MUTE')

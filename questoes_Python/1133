@@ -1,0 +1,16 @@
+# Resto da Divisão - 1133
+# Dado 2 valores, imprimir apenas os números dentro do intervalo de valores dados, 
+# em que o resto da divisão por 5 seja igual a 2 ou 3.
+
+valor_1= int(input())
+valor_2= int(input())
+if valor_1 > valor_2:
+    a= valor_2
+    b= valor_1
+elif valor_1 <= valor_2:
+    a= valor_1
+    b= valor_2
+for i in range(a+1, b):
+    if i%5==2 or i%5==3:
+        print(i)
+        

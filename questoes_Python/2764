@@ -1,0 +1,10 @@
+# Entrada e Sáida de Data - 2764
+# Seguindo as instruções dadas nesta questão, deve-se ler uma entrada em forma de data 
+# e imprimir essa data em três formatos diferentes.
+
+   
+d= input()
+d= d.split('/')
+print(f'{d[1]}/{d[0]}/{d[2]}')
+print(f'{d[2]}/{d[1]}/{d[0]}')
+print(f'{d[0]}-{d[1]}-{d[2]}')

@@ -1,0 +1,14 @@
+#Blobs
+
+N = int(input())
+for i in range(0,N):
+    dias = 0
+    qntd_comida = float(input())
+    parar = True
+    while parar == True:
+        qntd_comida = qntd_comida /2
+        dias+=1
+        if qntd_comida  <= 1:
+            parar = False    
+    print(dias,"dias")
+
